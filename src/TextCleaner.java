@@ -2,9 +2,9 @@
  This class is coded to intake a String and then through RegEx,
  Compile a RedEx that is desired that is then be used to "clean"
  the text.
- Import
 */
 
+// Import
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
