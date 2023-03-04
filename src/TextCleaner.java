@@ -11,8 +11,9 @@ public class TextCleaner {
         // String that will be "cleaned".
         String text = "<strike>Delete this!</strike>This text is good, keep it please.<strike>Not needed either</strike>";
 
-        // Creating and compiling a pattern and creating a pattern matcher "searcher".
+        // Creating and compiling a pattern.
         Pattern pattern = Pattern.compile("<strike>.*?</strike>");
+        // Creating a pattern "searcher".
         Matcher matcher = pattern.matcher(text);
 
         // Loop through the String while using the matcher to find "matches" and use Matcher methods
