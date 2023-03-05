@@ -4,7 +4,9 @@
 // Common argument that was used - "ABC"
 package Practice;
 
-@SuppressWarnings("ALL") // <-- This is because the small underlines were annoying and bothering.
+ // This is to make the code look clean with no underlines and small warnings.
+@SuppressWarnings({"MismatchedQueryAndUpdateOfStringBuilder", "StringRepeatCanBeUsed", "CommentedOutCode", "unused"})
+
 public class StringBuilderTimeEfficiencyExperiment {
     public static void main(String[] args) {
 
@@ -22,8 +24,8 @@ public class StringBuilderTimeEfficiencyExperiment {
         // Start recording time of the start in milliseconds
         long startTime = System.currentTimeMillis();
 
-        // for loop helps to use methods many time, duh its a loop for a reason...
-        // All of the methods that were used to measure their time use are listed below...
+        // for loop helps to use methods many times, duh it's a loop for a reason...
+        // All the methods that were used to measure their time use are listed below...
         for (int i = 0; i < smallCall; i++) {
             stringBuilder.append("ABC");
             // stringBuilder.delete(0,stringBuilder.length());
@@ -35,5 +37,6 @@ public class StringBuilderTimeEfficiencyExperiment {
 
         // Printing out the time it took for certain method to work certain amount of time.
         System.out.println((System.currentTimeMillis() - startTime));
+
     }
 }
